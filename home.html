@@ -1,0 +1,116 @@
+﻿<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="google-translate.css" rel="stylesheet">
+
+</head>
+<body> 
+<nav class="navbar navbar-default">
+  <div class="container">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand" href="#"></a>
+	</div>
+	<div id="navbar" class="collapse navbar-collapse">
+	  <ul class="nav navbar-nav">
+		<li><a href="#">Home</a></li>
+		<li><a href="#about">About</a></li>
+		<li><a href="#contact">Contact</a></li>
+		<li class="dropdown">
+		  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown<span class="caret"></span></a>
+		  <ul class="dropdown-menu">
+			<li><a href="/SK/index-sk.php">Story-Books</a></li>
+			<li><a href="#">Photo Gallery</a></li>
+			<li><a href="#"></a></li>
+		  </ul>
+		</li>
+
+		<li class="dropdown">
+		  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Change-Language<span class="caret"></span></a>
+		  <ul class="dropdown-menu">
+		  <li><a href="#googtrans(en|en)" class="lang-en lang-select" data-lang="en"><img src="" alt="USA"></a></li>
+		  <li><a href="#googtrans(en|hi)" class="lang-es lang-select" data-lang="hi"><img src="" alt="HINDI"></a></li>
+		  <li><a href="#googtrans(en|bn)" class="lang-es lang-select" data-lang="bn"><img src="" alt="BENGALI"></a></li>
+		  </ul>
+		</li>
+
+
+
+
+
+
+
+
+
+	  </ul>
+	</div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<div class="container">
+	<h2><strong>School Friends-1980 Batch</strong></h2>
+	
+	<p>Select a language from the upper-right dropdown menu and watch as the content of the page automatically translates.</p>
+	
+	<p>It is My Personal Website, purpose to communicate with old school life friends, sharing my love and affection to them through website.</p>
+
+	<p>To Share image, documents etc for personal use and entertainment purpose.If had Any Complain regarding any image or documents links will remove immediately.</p>
+
+	<hr>
+	<p><h3><strong>ABOUT FILE SHARING</strong></h3>
+	<p>This is my intention that everyone will read the books. I have no personal or business purpose here.I just have tried to place the books in one place
+           which were spread on different sites and groups on the Internet. I do not scan or save any books.  
+           If you like the book, be sure to collect a hard copy from the nearest library or donate to the author or publishing house.
+           I do not want to harm the author/publisher.If a person or organization downloads, stores and prepares and markets a book for malicious purposes, 
+           it is the responsibility of the downloader concerned. If the publisher or author has any objection to any book published on my site,
+           please mail to reikijsr2020@gmail.com with the link. The link to the book will be removed as soon as possible. Thanks for staying with me.</p>
+
+</div>
+
+
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+    }
+
+	function triggerHtmlEvent(element, eventName) {
+	  var event;
+	  if (document.createEvent) {
+		event = document.createEvent('HTMLEvents');
+		event.initEvent(eventName, true, true);
+		element.dispatchEvent(event);
+	  } else {
+		event = document.createEventObject();
+		event.eventType = eventName;
+		element.fireEvent('on' + event.eventType, event);
+	  }
+	}
+
+	jQuery('.lang-select').click(function() {
+	  var theLang = jQuery(this).attr('data-lang');
+	  jQuery('.goog-te-combo').val(theLang);
+
+	  //alert(jQuery(this).attr('href'));
+	  window.location = jQuery(this).attr('href');
+	  location.reload();
+
+	});
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
+
