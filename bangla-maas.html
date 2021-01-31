@@ -5,7 +5,7 @@
 <style type="text/css">
 
 .main {
-width:450px;
+width:550px;
 border:1px solid black;
 }
 
@@ -42,6 +42,7 @@ color: red;
 }
 
 table.gridtable {
+        width:450px;
 	font-family: Siyam Rupali, verdana,arial,sans-serif;
 	font-size:12px;
 	color:#333333;
@@ -259,7 +260,7 @@ if ((document.bdcalendar.myear.value)<595)
 else 
 {myyear=document.bdcalendar.myear.value;}
 var bdcal="";
-bdcal+='<table border="0" width="80%" id="table1" cellspacing="0" cellpadding="0">' ;
+bdcal+='<table border="0" width="100%" id="table1" cellspacing="0" cellpadding="0">' ;
 	bdcal+='<tr valign="top">' ;
 		bdcal+='<td>' + buildCal(1, myyear, "main", "month", "daysofweek", "days", 1) + '</td>' ;
 		bdcal+='<td>' + buildCal(2, myyear, "main", "month", "daysofweek", "days", 1) + '</td>' ;
