@@ -1,26 +1,76 @@
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html>
 
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
 <head>
-<style type="text/css">
 
-.main {
-width:550px;
-height:550px;
-border:1px solid black;
+<style>
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #FFA500;
 }
+
+
+
+.flex-container > 
+ div {
+ background-color: #f1f1f1;
+ width: auto;
+ height: auto;
+ margin-left: 8px; 
+ margin-right: 8px;
+ margin-top: 8px; 
+ margin-bottom: 8px;
+ text-align: center;
+ line-height: 24px;
+ font-size: 14px;
+
+ }
+
+
+
+
+
+.responsive {
+  width: 100%;
+  height: auto;
+  }
+
+ 
+
+
+
 
 .month {
-background-color:black;
-font:bold 12px verdana;
-color:white;
+ background-color:black;
+ font:bold 14px verdana;
+ color:white;
+ padding-top: 5px;
+ padding-right: 5px;
+ padding-bottom: 5px;
+ padding-left: 5px;
+
 }
 
+
+
+
 .daysofweek {
-background-color:gray;
-font:bold 12px verdana;
-color:white;
+ background-color:gray;
+ font:bold 12px verdana;
+ color:white;
+ padding-top: 5px;
+ padding-right: 5px;
+ padding-bottom: 5px;
+ padding-left: 5px;
 }
+
+
 
 .days {
 font-size: 24px;
@@ -28,53 +78,40 @@ font-family:verdana;
 color:black;
 background-color: lightyellow;
 padding: 2px;
+
 }
 
+
+
+
 .days #bangla{
-font-size: 10px;
+font-size: 14px;
 text-align:left;
-font-family:Siyam Rupali, verdana;
+font-family:verdana;
 color: green;
 }
+
 
 .days #today{
 font-weight: bold;
 color: red;
 }
 
-table.gridtable {
-        width:450px;
-	font-family: Siyam Rupali, verdana,arial,sans-serif;
-	font-size:12px;
-	color:#333333;
-	border-width: 1px;
-	border-color: #666666;
-	border-collapse: collapse;
+
+
+
+table, th, td {
+  border: 1px solid black;
+  margin-left: 10px; 
+  margin-right: 10px;
+  margin-top: 10px; 
+  margin-bottom: 10px;
+
 }
-table.gridtable th {
-	border-width: 1px;
-	padding: 8px;
-	border-style: solid;
-	border-color: #666666;
-	background-color: #dedede;
-}
-table.gridtable td {
-	border-width: 1px;
-	padding: 8px;
-	border-style: solid;
-	border-color: #666666;
-	background-color: lightyellow;
-            color:#000000;
-}
-    .style1
-    {
-        text-align: right;
-    }
+
+
 </style>
 
-
-
-</head>
 
 
 
@@ -261,7 +298,7 @@ if ((document.bdcalendar.myear.value)<595)
 else 
 {myyear=document.bdcalendar.myear.value;}
 var bdcal="";
-bdcal+='<table border="0" width="450px" height="450px" id="table1" cellspacing="0" cellpadding="0">' ;
+bdcal+='<table border="0" width="80%" id="table1" cellspacing="0" cellpadding="0">' ;
 	bdcal+='<tr valign="top">' ;
 		bdcal+='<td>' + buildCal(1, myyear, "main", "month", "daysofweek", "days", 1) + '</td>' ;
 		bdcal+='<td>' + buildCal(2, myyear, "main", "month", "daysofweek", "days", 1) + '</td>' ;
