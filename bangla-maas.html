@@ -6,6 +6,7 @@
 
 .main {
 width:550px;
+height:auto;
 border:1px solid black;
 }
 
@@ -260,7 +261,7 @@ if ((document.bdcalendar.myear.value)<595)
 else 
 {myyear=document.bdcalendar.myear.value;}
 var bdcal="";
-bdcal+='<table border="0" width="100%" id="table1" cellspacing="0" cellpadding="0">' ;
+bdcal+='<table border="0" width="450px" height="450px" id="table1" cellspacing="0" cellpadding="0">' ;
 	bdcal+='<tr valign="top">' ;
 		bdcal+='<td>' + buildCal(1, myyear, "main", "month", "daysofweek", "days", 1) + '</td>' ;
 		bdcal+='<td>' + buildCal(2, myyear, "main", "month", "daysofweek", "days", 1) + '</td>' ;
