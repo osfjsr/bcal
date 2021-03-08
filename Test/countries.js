@@ -1,8 +1,3 @@
-[
-{"type":"header","version":"4.9.5","comment":"Export to JSON plugin for PHPMyAdmin"},
-{"type":"database","name":"id13867812_users"},
-{"type":"table","name":"countries","database":"id13867812_users","data":
-[
 {"id":"1","sortname":"AF","name":"Afghanistan","phonecode":"93"},
 {"id":"2","sortname":"AL","name":"Albania","phonecode":"355"},
 {"id":"3","sortname":"DZ","name":"Algeria","phonecode":"213"},
@@ -249,6 +244,3 @@
 {"id":"244","sortname":"YU","name":"Yugoslavia","phonecode":"38"},
 {"id":"245","sortname":"ZM","name":"Zambia","phonecode":"260"},
 {"id":"246","sortname":"ZW","name":"Zimbabwe","phonecode":"263"}
-]
-}
-]
