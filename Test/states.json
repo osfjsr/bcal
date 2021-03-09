@@ -1,8 +1,4 @@
 [
-{"type":"header","version":"4.9.5","comment":"Export to JSON plugin for PHPMyAdmin"},
-{"type":"database","name":"id13867812_users"},
-{"type":"table","name":"states","database":"id13867812_users","data":
-[
 {"id":"1","name":"Andaman and Nicobar Islands (Union Territory)","country_id":"101"},
 {"id":"2","name":"Andhra Pradesh","country_id":"101"},
 {"id":"3","name":"Arunachal Pradesh","country_id":"101"},
@@ -4090,6 +4086,4 @@
 {"id":"4119","name":"Matabeleland South","country_id":"246"},
 {"id":"4120","name":"Midlands","country_id":"246"},
 {"id":"4121","name":"Lienchiang County","country_id":"214"}
-]
-}
 ]
