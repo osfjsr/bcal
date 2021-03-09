@@ -14,7 +14,7 @@
       let users = JSON.parse(this.response);
       let output = '';
       for (var i = 0; i < countries.length; i++) {
-        output += '<li>'countries[i].id + countries[i].sortname + countries[i].name + ' akm ' + countries[i].phonecode + 'akm'; '</li>'
+        output += '<li>'countries[i].id + countries[i].sortname + countries[i].name + countries[i].phonecode; '</li>'
       }
       document.getElementById('countries').innerHTML = output;
     }
