@@ -5,7 +5,7 @@
   <title>JSON Demo</title>
 </head>
 <body>
-  <ul id="countries"></ul>
+  <ol id="countries"></ol>
   <script>
     let request = new XMLHttpRequest();
     request.open('GET', 'countries.json', true);
@@ -14,7 +14,7 @@
       let countries = JSON.parse(this.response);
       let output = '';
       for (var i = 0; i < countries.length; i++) {
-        output += '<li>' + countries[i].name + ' Phonecode is ' + countries[i].phonecode + ' right now.'; '</li>'
+        output += '<li>' + countries[i].name + ' Phonecode : - ' + countries[i].phonecode + ' .'; '</li>'
       }
       document.getElementById('countries').innerHTML = output;
     }
