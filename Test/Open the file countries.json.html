@@ -14,7 +14,7 @@
       let countries = JSON.parse(this.response);
       let output = '';
       for (var i = 0; i < countries.length; i++) {
-        output += '<li>' + countries[i].name + ' have ' + countries[i].phonecode + ' right now.'; '</li>'
+        output += '<li>' + countries[i].name + ' Phonecode is ' + countries[i].phonecode + ' right now.'; '</li>'
       }
       document.getElementById('countries').innerHTML = output;
     }
