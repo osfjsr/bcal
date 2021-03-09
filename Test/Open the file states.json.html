@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JSON Demo</title>
+</head>
+<body>
+  <ol id="states"></ol>
+  <script>
+    let request = new XMLHttpRequest();
+    request.open('GET', 'states.json', true);
+      request.onload = function () {
+      // Convert JSON data to an object
+      let states = JSON.parse(this.response);
+      let output = '';
+      for (var i = 0; i < states.length; i++) {
+        output += '<li>' + states[i].name + ' country_id : - ' + states[i].country_id + ' .'; '</li>'
+      }
+      document.getElementById('states').innerHTML = output;
+    }
+    request.send();
+  </script>
+</body>
+</html>
