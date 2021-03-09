@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JSON Demo</title>
+</head>
+<body>
+  <ul id="countries"></ul>
+  <script>
+    let request = new XMLHttpRequest();
+    request.open('GET', 'countries.json', true);
+      request.onload = function () {
+      // Convert JSON data to an object
+      let countries = JSON.parse(this.response);
+      let output = '';
+      for (var i = 0; i < countries.length; i++) {
+        output += '<li>' + countries[i].name + ' is ' + countries[i].phonecode + ' years old.'; '</li>'
+      }
+      document.getElementById('countries').innerHTML = output;
+    }
+    request.send();
+  </script>
+</body>
+</html>
