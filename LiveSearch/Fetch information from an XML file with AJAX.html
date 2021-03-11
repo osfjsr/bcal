@@ -13,7 +13,7 @@ th,td {
 
 <h2>The XMLHttpRequest Object</h2>
 
-<button type="button" onclick="loadDoc()">Get my CD collection</button>
+<button type="button" onclick="loadDoc()">Get my Link collection</button>
 <br><br>
 <table id="demo"></table>
 
@@ -32,7 +32,7 @@ function myFunction(xml) {
   var i;
   var xmlDoc = xml.responseXML;
   var table="<tr><th>Title</th><th>URL</th></tr>";
-  var x = xmlDoc.getElementsByTagName("Link");
+  var x = xmlDoc.getElementsByTagName("link");
   for (i = 0; i <x.length; i++) { 
     table += "<tr><td>" +
     x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
