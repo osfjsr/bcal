@@ -1,7 +1,7 @@
 <pages>
-<link>
+<link xmlns:xlink="http://www.w3.org/1999/xlink">
 <title>HTML a tag</title>
-  <url><a href="https://www.w3schools.com">w3schools</a></url>
+<url xlink:type="simple" xlink:href="http://www.w3.org">Visit W3C></url>
 </link>
 <link>
 <title>HTML br tag</title>
