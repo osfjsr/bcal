@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pages>
-<link xmlns:xlink="http://www.w3.org/1999/xlink">
+<link>
 <title>HTML a tag</title>
-<url xlink:href="http://www.w3.org">Visit W3C</url>
+<url>https://www.w3schools.com/</url>
 </link>
 <link>
 <title>HTML br tag</title>
