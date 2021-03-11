@@ -2,7 +2,7 @@
 <pages>
 <link>
 <title>HTML a tag</title>
-<url>https://www.w3schools.com/</url>
+<url><![CDATA[<a href="www.somepage.com">click here for details</a>]]></url>
 </link>
 <link>
 <title>HTML br tag</title>
